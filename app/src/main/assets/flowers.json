@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Rosa chinensis",
+    "height": 234.5,
+    "leaf_count": 47
+  },
+  {
+    "name": "Lilium longiflorum",
+    "height": 170.6,
+    "leaf_count": 17
+  },
+  {
+    "name": "Hibiscus rosa-sinensis",
+    "height": 127.6,
+    "leaf_count": 29
+  },
+  {
+    "name": "Nymphaea caerulea",
+    "height": 262.1,
+    "leaf_count": 44
+  },
+  {
+    "name": "Helianthus annuus",
+    "height": 236.5,
+    "leaf_count": 49
+  },
+  {
+    "name": "Lavandula angustifolia",
+    "height": 178.9,
+    "leaf_count": 12
+  },
+  {
+    "name": "Bougainvillea glabra",
+    "height": 251.4,
+    "leaf_count": 87
+  },
+  {
+    "name": "Magnolia grandiflora",
+    "height": 157.7,
+    "leaf_count": 54
+  },
+  {
+    "name": "Dahlia pinnata",
+    "height": 253.2,
+    "leaf_count": 61
+  },
+  {
+    "name": "Zinnia elegans",
+    "height": 37.6,
+    "leaf_count": 96
+  },
+  {
+    "name": "Viola odorata",
+    "height": 201.2,
+    "leaf_count": 26
+  },
+  {
+    "name": "Petunia hybrida",
+    "height": 78.4,
+    "leaf_count": 88
+  },
+  {
+    "name": "Chrysanthemum morifolium",
+    "height": 216.5,
+    "leaf_count": 28
+  },
+  {
+    "name": "Jasminum sambac",
+    "height": 291.6,
+    "leaf_count": 94
+  },
+  {
+    "name": "Camellia japonica",
+    "height": 134.3,
+    "leaf_count": 72
+  },
+  {
+    "name": "Orchidaceae phalaenopsis",
+    "height": 157.1,
+    "leaf_count": 50
+  },
+  {
+    "name": "Geranium robertianum",
+    "height": 288.8,
+    "leaf_count": 94
+  },
+  {
+    "name": "Impatiens walleriana",
+    "height": 156.3,
+    "leaf_count": 13
+  },
+  {
+    "name": "Papaver rhoeas",
+    "height": 298.2,
+    "leaf_count": 29
+  },
+  {
+    "name": "Begonia semperflorens",
+    "height": 281.7,
+    "leaf_count": 31
+  },
+  {
+    "name": "Ipomoea purpurea",
+    "height": 19.4,
+    "leaf_count": 79
+  },
+  {
+    "name": "Calendula officinalis",
+    "height": 21.4,
+    "leaf_count": 35
+  },
+  {
+    "name": "Nerium oleander",
+    "height": 220.0,
+    "leaf_count": 53
+  },
+  {
+    "name": "Aster amellus",
+    "height": 18.6,
+    "leaf_count": 35
+  },
+  {
+    "name": "Coreopsis tinctoria",
+    "height": 116.1,
+    "leaf_count": 96
+  },
+  {
+    "name": "Gaillardia pulchella",
+    "height": 138.9,
+    "leaf_count": 85
+  },
+  {
+    "name": "Cosmos bipinnatus",
+    "height": 282.4,
+    "leaf_count": 43
+  },
+  {
+    "name": "Antirrhinum majus",
+    "height": 235.5,
+    "leaf_count": 25
+  },
+  {
+    "name": "Plumeria rubra",
+    "height": 175.8,
+    "leaf_count": 69
+  },
+  {
+    "name": "Passiflora caerulea",
+    "height": 208.1,
+    "leaf_count": 95
+  },
+  {
+    "name": "Catharanthus roseus",
+    "height": 100.7,
+    "leaf_count": 54
+  },
+  {
+    "name": "Tagetes erecta",
+    "height": 206.8,
+    "leaf_count": 69
+  },
+  {
+    "name": "Pelargonium graveolens",
+    "height": 25.4,
+    "leaf_count": 6
+  },
+  {
+    "name": "Fuchsia magellanica",
+    "height": 278.0,
+    "leaf_count": 7
+  },
+  {
+    "name": "Lantana camara",
+    "height": 112.3,
+    "leaf_count": 99
+  },
+  {
+    "name": "Clivia miniata",
+    "height": 116.4,
+    "leaf_count": 100
+  },
+  {
+    "name": "Salvia splendens",
+    "height": 57.2,
+    "leaf_count": 96
+  },
+  {
+    "name": "Alcea rosea",
+    "height": 52.0,
+    "leaf_count": 36
+  },
+  {
+    "name": "Delphinium ajacis",
+    "height": 165.3,
+    "leaf_count": 62
+  },
+  {
+    "name": "Aquilegia vulgaris",
+    "height": 110.5,
+    "leaf_count": 87
+  },
+  {
+    "name": "Digitalis purpurea",
+    "height": 107.8,
+    "leaf_count": 11
+  },
+  {
+    "name": "Gaura lindheimeri",
+    "height": 109.4,
+    "leaf_count": 50
+  },
+  {
+    "name": "Echinacea purpurea",
+    "height": 119.7,
+    "leaf_count": 67
+  },
+  {
+    "name": "Campanula medium",
+    "height": 224.9,
+    "leaf_count": 34
+  },
+  {
+    "name": "Phlox paniculata",
+    "height": 198.8,
+    "leaf_count": 99
+  },
+  {
+    "name": "Heliotropium arborescens",
+    "height": 146.7,
+    "leaf_count": 44
+  },
+  {
+    "name": "Lupinus polyphyllus",
+    "height": 55.4,
+    "leaf_count": 87
+  },
+  {
+    "name": "Verbena bonariensis",
+    "height": 15.4,
+    "leaf_count": 25
+  },
+  {
+    "name": "Leucanthemum vulgare",
+    "height": 28.0,
+    "leaf_count": 94
+  },
+  {
+    "name": "Scabiosa caucasica",
+    "height": 38.5,
+    "leaf_count": 17
+  }
+]

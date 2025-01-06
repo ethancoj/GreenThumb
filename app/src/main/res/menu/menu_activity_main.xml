@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mActivityMainHome"
+        android:icon="@drawable/ic_home_24dp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/mActivityMainGrowth"
+        android:icon="@drawable/ic_emoji_nature_24dp"
+        android:title="@string/growth" />
+
+    <item
+        android:id="@+id/mActivityMainInformations"
+        android:icon="@drawable/ic_info_24dp"
+        android:title="@string/informations" />
+
+    <item
+        android:id="@+id/mActivityMainProfile"
+        android:icon="@drawable/ic_person_24dp"
+        android:title="@string/profile" />
+
+</menu>

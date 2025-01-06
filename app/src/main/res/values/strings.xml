@@ -1,0 +1,18 @@
+<resources>
+    <string name="_height">Height: %1$d cm</string>
+    <string name="_leaf_count">Leaf count: %1$d</string>
+    <string name="add_plant">Add plant</string>
+    <string name="app_name">Plants</string>
+    <string name="desert">Desert</string>
+    <string name="home">Home</string>
+    <string name="informations">Informations</string>
+    <string name="no_informations_are_found">No informations are found</string>
+    <string name="no_plants_are_found">No plants are found</string>
+    <string name="plants">Growth tracker</string>
+    <string name="profile">Profile</string>
+    <string name="temperate">Temperate</string>
+    <string name="tropical">Tropical</string>
+    <string name="wetland">Wetland</string>
+    <string name="growth">Growth Tracker</string>
+    <string name="no_growth_records_found">No growth records found</string>
+</resources>

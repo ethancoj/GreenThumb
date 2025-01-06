@@ -1,0 +1,14 @@
+[
+  {
+    "name": "English Oak",
+    "scientific_name": "Quercus robur",
+    "description": "A large deciduous tree native to Europe, known for its strength and longevity.",
+    "long_description": "The English Oak is one of the most common and important trees in temperate forests across Europe. It can grow up to 40 meters tall and live for over 1,000 years. The tree’s leaves are lobed and turn golden brown in autumn before falling. English Oak wood is highly valued for its strength and durability, making it ideal for furniture, flooring, and shipbuilding. Acorns, the tree’s fruit, are an important food source for wildlife such as squirrels, deer, and birds. The tree thrives in well-drained soil and prefers full sun. English Oaks are often planted in parks and large gardens for shade and ornamental purposes. They play a crucial role in their ecosystems by supporting a wide range of fungi, insects, and other organisms. Due to their cultural significance and environmental importance, these trees are often protected by conservation laws."
+  },
+  {
+    "name": "Sugar Maple",
+    "scientific_name": "Acer saccharum",
+    "description": "A deciduous tree known for its brilliant fall colors and maple syrup production.",
+    "long_description": "The Sugar Maple is native to the northeastern United States and eastern Canada, where it is a symbol of the region’s forests. The tree can grow up to 30 meters tall and live for over 300 years. Its leaves are broad and lobed, turning vibrant shades of yellow, orange, and red in autumn. Sugar Maples are best known for their sap, which is collected in late winter and early spring to produce maple syrup. The tree prefers well-drained, fertile soil and thrives in cool climates. It provides habitat and food for various animals, including birds, squirrels, and insects. The wood of the Sugar Maple is hard and dense, making it valuable for furniture and flooring. This tree also plays a significant role in forest ecology, helping to stabilize soil and regulate water cycles. Sugar Maples are commonly planted in parks and along streets for their ornamental value."
+  }
+]
