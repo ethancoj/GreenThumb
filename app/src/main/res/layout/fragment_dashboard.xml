@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3fadb"
+    tools:context=".FragmentDashboard">
+
+
+    <Button
+        android:id="@+id/BtnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#5f873d"
+        android:text="Log Out"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnGrowthTracker"
+        android:layout_width="163dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#7e7f1c"
+        android:drawableTop="@mipmap/growth_tracker_icon_foreground"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="8dp"
+
+        android:paddingBottom="8dp"
+        android:text="Growth Tracker"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/BtnPlantInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#7e7f1c"
+        android:drawableTop="@mipmap/plant_info_icon_foreground"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Plant Information"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toEndOf="@+id/BtnGrowthTracker"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLogOut" />
+
+    <Button
+        android:id="@+id/BtnCarbonFootprintCalcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#7e7f1c"
+        android:drawableTop="@mipmap/carbon_footprint_calculator_icon_foreground"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Carbon Footprint\nCalculator"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toEndOf="@+id/BtnSustainableLivingGuide"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPlantInformation" />
+
+    <Button
+        android:id="@+id/BtnNotification"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#5f873d"
+        android:text="Notification"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSustainableLivingGuide" />
+
+    <Button
+        android:id="@+id/BtnSustainableLivingGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#7e7f1c"
+        android:drawableTop="@mipmap/sustainable_living_guide_icon_foreground"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Sustainable Living\nGuide"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnGrowthTracker" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnEditAccount"
+        app:srcCompat="@mipmap/profile_picture_foreground" />
+
+    <Button
+        android:id="@+id/BtnHelpCentre"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#5f873d"
+        android:text="Help Centre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnNotification" />
+
+    <Button
+        android:id="@+id/BtnFeedback"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#5f873d"
+        android:text="Feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnHelpCentre" />
+
+    <Button
+        android:id="@+id/BtnAboutUs"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#5f873d"
+        android:text="About Us"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFeedback" />
+
+    <Button
+        android:id="@+id/BtnEditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#5f873d"
+        android:text="Edit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="92dp"
+        android:text="Ali bin Abu"
+        android:textColor="#7E7F1C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="2dp"
+        android:text="alibinabu@gmail.com"
+        android:textColor="#7E7F1C"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

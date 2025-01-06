@@ -1,0 +1,33 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk.dir property defines location of SDK)
+local.properties
+
+# Intellij IDEA files
+.idea/
+
+# User-specific stuff
+*.iml
+*.ipr
+
+# Logs
+*.log
+
+# Android Studio caches and temporary files
+*.apk
+*.arr
+*.aab
+*.so
+*.jar
+*.class
+*.dex
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VCS
+.git/
+.svn/

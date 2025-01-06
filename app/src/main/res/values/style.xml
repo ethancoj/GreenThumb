@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">#628641</item>
+        <item name="android:textColor">#f3fadb</item> <!-- Optional: Set text color -->
+    </style>
+
+</resources>
