@@ -45,4 +45,9 @@
     <color name="md_theme_surfaceContainer">#EEEFE5</color>
     <color name="md_theme_surfaceContainerHigh">#E8E9DF</color>
     <color name="md_theme_surfaceContainerHighest">#E2E3DA</color>
+    <color name="sage_green">#A5B5A3</color>
+    <color name="light_sage_green">#C8D1C7</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#2C2C2C</color>
+    <color name="text_secondary">#666666</color>
 </resources>

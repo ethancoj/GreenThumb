@@ -3,24 +3,112 @@
     "name": "Swiss Cheese Plant",
     "scientific_name": "Monstera deliciosa",
     "description": "A tropical vine known for its large, glossy leaves with characteristic holes.",
-    "long_description": "The Swiss Cheese Plant is a popular tropical plant native to the rainforests of Central America. It thrives in warm, humid conditions and is often used as a decorative houseplant due to its striking appearance. The plant’s leaves are large, heart-shaped, and develop holes or slits as they mature, which is an adaptation to withstand heavy rainfall and wind in its natural habitat. The plant produces edible fruit that has a taste similar to pineapple and banana. It requires indirect sunlight and moist soil for optimal growth. In homes, it can grow to a height of 3 to 4 meters if provided with support. The plant’s aerial roots can absorb moisture and nutrients from the air, making it suitable for climbing. Regular pruning helps maintain its shape. The Swiss Cheese Plant is toxic to pets if ingested. Its unique appearance makes it a favorite among plant enthusiasts."
+    "long_description": "The Swiss Cheese Plant is a popular tropical plant native to the rainforests of Central America. It thrives in warm, humid conditions and is often used as a decorative houseplant due to its striking appearance. The plant's leaves are large, heart-shaped, and develop holes or slits as they mature.",
+    "special_features": [
+      "Unique Leaf Fenestration",
+      "Aerial Root Development",
+      "Edible Fruit Production"
+    ],
+    "care_tips": {
+      "light": "Bright Indirect Light",
+      "water": "Weekly",
+      "temperature": "Minimum of 20°C (68°F)"
+    }
   },
   {
     "name": "Bird of Paradise",
     "scientific_name": "Strelitzia reginae",
     "description": "A striking plant known for its colorful, bird-like flowers.",
-    "long_description": "Bird of Paradise is an iconic tropical plant native to South Africa, but it is widely cultivated in tropical and subtropical regions around the world. Its distinctive flowers resemble a brightly colored bird in flight, hence the name. The plant grows well in both gardens and pots, making it a versatile choice for landscaping. The leaves are large, glossy, and paddle-shaped, similar to those of a banana plant. It requires bright, indirect sunlight and well-drained soil for healthy growth. During the flowering season, which typically lasts several months, the plant produces flowers in shades of orange, blue, and purple. The Bird of Paradise can reach a height of 1.5 to 2 meters and benefits from regular feeding during the growing season. It is relatively drought-tolerant once established but prefers consistent watering. This plant is considered non-toxic to humans but mildly toxic to pets. It symbolizes freedom and paradise in various cultures."
+    "long_description": "Bird of Paradise is an iconic tropical plant native to South Africa. Its distinctive flowers resemble a brightly colored bird in flight, hence the name. The plant grows well in both gardens and pots, making it a versatile choice for landscaping.",
+    "special_features": [
+      "Bird-Like Flowers",
+      "Multiple Bloom Cycles",
+      "Evergreen Foliage"
+    ],
+    "care_tips": {
+      "light": "Bright Direct Light",
+      "water": "Every 1-2 weeks",
+      "temperature": "Minimum of 18°C (65°F)"
+    }
   },
   {
     "name": "Frangipani",
     "scientific_name": "Plumeria rubra",
     "description": "A tropical tree known for its fragrant, colorful flowers.",
-    "long_description": "Frangipani is a small tropical tree native to Central America, known for its beautiful, fragrant flowers that bloom in clusters. The flowers come in a range of colors, including white, yellow, pink, and red, with a distinct sweet fragrance. Frangipani trees can grow up to 6 meters in height and have a spreading growth habit, making them ideal for use as shade trees in gardens. The tree thrives in well-draining soil and prefers full sunlight. It is drought-tolerant once established but benefits from regular watering during hot, dry periods. Pruning helps maintain its shape and encourages flowering. The plant has thick, fleshy branches and a milky sap that can irritate the skin. In many cultures, the flowers are used in traditional ceremonies and leis. The tree is also known to attract pollinators like bees and butterflies. Despite its tropical origins, Frangipani can tolerate mild frost. It grows well in coastal areas due to its salt tolerance."
+    "long_description": "Frangipani is a small tropical tree native to Central America, known for its beautiful, fragrant flowers that bloom in clusters. The flowers come in a range of colors, including white, yellow, pink, and red, with a distinct sweet fragrance.",
+    "special_features": [
+      "Fragrant Blooms",
+      "Salt Tolerance",
+      "Drought Resistance"
+    ],
+    "care_tips": {
+      "light": "Full Sun",
+      "water": "Every 2-3 weeks",
+      "temperature": "Minimum of 15°C (59°F)"
+    }
   },
   {
     "name": "Croton",
     "scientific_name": "Codiaeum variegatum",
     "description": "A colorful tropical shrub with variegated leaves.",
-    "long_description": "Croton is a tropical shrub native to Southeast Asia and the Pacific Islands, known for its vibrant foliage. The leaves display a wide range of colors, including green, yellow, orange, red, and purple, often in striking patterns. Croton is a popular choice for both indoor and outdoor decoration due to its bold appearance. It grows best in well-drained soil and bright, indirect sunlight. The plant requires high humidity and consistent moisture but should not be overwatered, as it is susceptible to root rot. Croton can reach a height of up to 1.5 meters and benefits from regular feeding during the growing season. Pruning helps maintain its compact shape and encourages new growth. The plant produces small, inconspicuous flowers but is primarily grown for its leaves. It is toxic if ingested, so caution should be taken around pets and children. Croton’s striking colors can brighten up any space, making it a favorite among gardeners and interior decorators."
+    "long_description": "Croton is a tropical shrub native to Southeast Asia and the Pacific Islands, known for its vibrant foliage. The leaves display a wide range of colors, including green, yellow, orange, red, and purple, often in striking patterns.",
+    "special_features": [
+      "Multicolored Foliage",
+      "Year-round Color",
+      "Air Purification"
+    ],
+    "care_tips": {
+      "light": "Bright Indirect Light",
+      "water": "Keep soil moist",
+      "temperature": "Minimum of 16°C (61°F)"
+    }
+  },
+  {
+    "name": "Orchid Tree",
+    "scientific_name": "Bauhinia purpurea",
+    "description": "A tropical tree with showy, orchid-like flowers.",
+    "long_description": "The Orchid Tree produces stunning purple-pink flowers that resemble orchids. It can grow up to 10 meters tall and provides beautiful year-round blooms.",
+    "special_features": [
+      "Orchid-like Blooms",
+      "Fast Growth",
+      "Butterfly Attraction"
+    ],
+    "care_tips": {
+      "light": "Full Sun to Part Shade",
+      "water": "Regular watering",
+      "temperature": "Minimum of 15°C (59°F)"
+    }
+  },
+  {
+    "name": "Red Ginger",
+    "scientific_name": "Alpinia purpurata",
+    "description": "A tropical flowering plant with bright red bracts.",
+    "long_description": "Red Ginger is known for its vibrant red bracts that last for months. It grows in clumps and can reach heights of 2-4 meters.",
+    "special_features": [
+      "Long-lasting Blooms",
+      "Tropical Accent",
+      "Cut Flower Use"
+    ],
+    "care_tips": {
+      "light": "Partial Shade",
+      "water": "Keep soil moist",
+      "temperature": "Minimum of 15°C (59°F)"
+    }
+  },
+  {
+    "name": "Giant Bamboo",
+    "scientific_name": "Dendrocalamus giganteus",
+    "description": "One of the largest species of bamboo in the world.",
+    "long_description": "Giant Bamboo is an impressive tropical plant that can grow up to 30 meters tall. Its culms can reach 25-30 cm in diameter.",
+    "special_features": [
+      "Rapid Growth",
+      "Building Material",
+      "Sound Barrier"
+    ],
+    "care_tips": {
+      "light": "Full Sun to Part Shade",
+      "water": "Regular watering",
+      "temperature": "Minimum of 15°C (59°F)"
+    }
   }
 ]

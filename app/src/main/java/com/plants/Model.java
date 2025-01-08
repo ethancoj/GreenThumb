@@ -7,4 +7,8 @@ public class Model {
     public static CollectionReference getGrowth() {
         return FirebaseFirestore.getInstance().collection("growth");
     }
+
+    public static CollectionReference getInformation() {
+        return FirebaseFirestore.getInstance().collection("information");
+    }
 }

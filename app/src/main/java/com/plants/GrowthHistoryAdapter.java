@@ -1,45 +1,57 @@
-package com.plants
+package com.plants;
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import java.text.SimpleDateFormat
-import java.util.Locale
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
-class GrowthHistoryAdapter : RecyclerView.Adapter<GrowthHistoryAdapter.ViewHolder>() {
-    private val historyList = mutableListOf<Growth>()
+public class GrowthHistoryAdapter extends RecyclerView.Adapter<GrowthHistoryAdapter.ViewHolder> {
+    private final List<Growth> historyList = new ArrayList<>();
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy - HH:mm", Locale.getDefault());
 
-    override fun getItemCount() = historyList.size
+    @Override
+    public int getItemCount() {
+        return historyList.size();
+    }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val growth = historyList[position]
-        val dateFormat = SimpleDateFormat("MMM dd, yyyy - HH:mm", Locale.getDefault())
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Growth growth = historyList.get(position);
+        holder.date.setText(dateFormat.format(growth.getTimestamp().toDate()));
+        holder.height.setText(String.format("%d cm", (int)growth.getHeight()));
+        holder.leafCount.setText(String.valueOf(growth.getLeafCount()));
+    }
 
-        holder.apply {
-            date.text = dateFormat.format(growth.timestamp.toDate())
-            height.text = "${growth.height.toInt()} cm"
-            leafCount.text = growth.leafCount.toString()
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.adapter_growth_history, parent, false);
+        return new ViewHolder(view);
+    }
+
+    public void updateHistory(List<Growth> history) {
+        historyList.clear();
+        historyList.addAll(history);
+        notifyDataSetChanged();
+    }
+
+    static class ViewHolder extends RecyclerView.ViewHolder {
+        final TextView date;
+        final TextView height;
+        final TextView leafCount;
+
+        ViewHolder(View view) {
+            super(view);
+            date = view.findViewById(R.id.tvDate);
+            height = view.findViewById(R.id.tvHistoryHeight);
+            leafCount = view.findViewById(R.id.tvHistoryLeafCount);
         }
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.adapter_growth_history, parent, false)
-        )
-    }
-
-    fun updateHistory(history: List<Growth>) {
-        historyList.clear()
-        historyList.addAll(history)
-        notifyDataSetChanged()
-    }
-
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val date: TextView = view.findViewById(R.id.tvDate)
-        val height: TextView = view.findViewById(R.id.tvHistoryHeight)
-        val leafCount: TextView = view.findViewById(R.id.tvHistoryLeafCount)
     }
 }

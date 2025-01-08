@@ -1,58 +1,82 @@
 package com.plants;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import java.text.SimpleDateFormat;
+import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-public class GrowthHistoryAdapter extends RecyclerView.Adapter<GrowthHistoryAdapter.ViewHolder> {
-    private final List<Growth> historyList = new ArrayList<>();
-    private final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy - HH:mm", Locale.getDefault());
+public class GrowthAdapter extends RecyclerView.Adapter<GrowthAdapter.ViewHolder> {
+    private final List<Growth> growthList = new ArrayList<>();
 
     @Override
     public int getItemCount() {
-        return historyList.size();
+        return growthList.size();
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Growth growth = historyList.get(position);
+        Growth growth = growthList.get(position);
+        holder.name.setText(growth.getPlantName());
 
-        holder.date.setText(dateFormat.format(growth.getTimestamp().toDate()));
-        holder.height.setText(String.format(Locale.getDefault(), "%d cm", (int) growth.getHeight()));
-        holder.leafCount.setText(String.valueOf(growth.getLeafCount()));
+        // Handle item click for editing
+        holder.cardView.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), GrowthActivity.class);
+            intent.putExtra("growth", Utils.getGson().toJson(growth));
+            intent.putExtra("isEdit", true);
+            v.getContext().startActivity(intent);
+        });
+
+        // Handle delete button click
+        holder.deleteButton.setOnClickListener(v -> {
+            String id = growth.getId();
+            if (id != null) {
+                new MaterialAlertDialogBuilder(v.getContext())
+                        .setTitle("Delete Growth Record")
+                        .setMessage("Are you sure you want to delete this record?")
+                        .setPositiveButton("Delete", (dialog, which) ->
+                                Model.getGrowth().document(id).delete())
+                        .setNegativeButton("Cancel", null)
+                        .show();
+            }
+        });
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.adapter_growth_history, parent, false);
+                .inflate(R.layout.adapter_growth, parent, false);
         return new ViewHolder(view);
     }
 
-    public void updateHistory(List<Growth> history) {
-        historyList.clear();
-        historyList.addAll(history);
+    public void add(Growth growth) {
+        growthList.add(growth);
+        notifyItemInserted(growthList.indexOf(growth));
+    }
+
+    public void removeAll() {
+        growthList.clear();
         notifyDataSetChanged();
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView date;
-        final TextView height;
-        final TextView leafCount;
+        final MaterialCardView cardView;
+        final TextView name;
+        final ImageButton deleteButton;
 
         ViewHolder(View view) {
             super(view);
-            date = view.findViewById(R.id.tvDate);
-            height = view.findViewById(R.id.tvHistoryHeight);
-            leafCount = view.findViewById(R.id.tvHistoryLeafCount);
+            cardView = view.findViewById(R.id.mcvAdapterGrowth);
+            name = view.findViewById(R.id.tvAdapterGrowth);
+            deleteButton = view.findViewById(R.id.btnDelete);
         }
     }
 }

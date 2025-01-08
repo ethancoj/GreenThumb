@@ -17,10 +17,6 @@ public class Growth {
     public Growth() {
         // Required empty constructor for Firestore
         this.timestamp = Timestamp.now();
-        this.plantName = "";
-        this.height = 0.0;
-        this.leafCount = 0;
-        this.imagePath = "";
     }
 
     public Growth(String plantName, double height, int leafCount, String imagePath) {

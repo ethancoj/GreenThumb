@@ -3,18 +3,80 @@
     "name": "Saguaro Cactus",
     "scientific_name": "Carnegiea gigantea",
     "description": "A large, iconic cactus native to the Sonoran Desert.",
-    "long_description": "The Saguaro Cactus is one of the most recognizable desert plants due to its towering height and branching arms. Native to the Sonoran Desert in the southwestern United States and Mexico, it can live for over 150 years and grow up to 12 meters tall. This slow-growing cactus begins to develop its characteristic arms after about 75 years. The Saguaro stores water in its spongy tissue, allowing it to survive long periods of drought. During the blooming season, it produces large white flowers, which are pollinated by bats and bees. These flowers eventually develop into red, edible fruits that are a food source for wildlife. The cactus provides shelter for birds such as the Gila woodpecker, which nests inside its thick stem. The Saguaro thrives in well-drained, sandy soil and requires full sun. Its spines help reduce water loss and offer protection from herbivores. The plant plays a vital role in its ecosystem and is protected by law."
+    "long_description": "The Saguaro Cactus is one of the most recognizable desert plants due to its towering height and branching arms. Native to the Sonoran Desert in the southwestern United States and Mexico, it can live for over 150 years and grow up to 12 meters tall. This slow-growing cactus begins to develop its characteristic arms after about 75 years. The Saguaro stores water in its spongy tissue, allowing it to survive long periods of drought.",
+    "special_features": [
+      "Extreme Longevity (150+ years)",
+      "Night Blooming Flowers",
+      "Wildlife Habitat Support"
+    ],
+    "care_tips": {
+      "light": "Full Sun Required",
+      "water": "Every 3-4 weeks",
+      "temperature": "Minimum of 15°C (60°F)"
+    }
   },
   {
     "name": "Joshua Tree",
     "scientific_name": "Yucca brevifolia",
     "description": "A tree-like yucca plant found in the Mojave Desert.",
-    "long_description": "The Joshua Tree is a unique desert plant that grows in the arid regions of the southwestern United States, particularly in the Mojave Desert. Named by Mormon settlers who thought the plant's outstretched branches resembled the biblical figure Joshua raising his hands in prayer, it can grow up to 15 meters tall. The tree’s thick, spiny leaves reduce water loss, an adaptation essential for survival in the desert. Joshua Trees are pollinated by yucca moths, which lay their eggs inside the flowers. The tree provides food and shelter for various desert animals, including birds, lizards, and small mammals. It grows in sandy or rocky soil and prefers elevations between 400 and 1,800 meters. Although it can live for hundreds of years, the Joshua Tree is sensitive to climate change and habitat destruction. Its slow growth and unique appearance make it an important symbol of desert ecosystems."
+    "long_description": "The Joshua Tree is a unique desert plant that grows in the arid regions of the southwestern United States, particularly in the Mojave Desert. Named by Mormon settlers who thought the plant's outstretched branches resembled the biblical figure Joshua raising his hands in prayer, it can grow up to 15 meters tall.",
+    "special_features": [
+      "Unique Branch Pattern",
+      "Moth-Dependent Pollination",
+      "High Elevation Adaptation"
+    ],
+    "care_tips": {
+      "light": "Full Sun Required",
+      "water": "Monthly",
+      "temperature": "Minimum of 10°C (50°F)"
+    }
   },
   {
     "name": "Golden Barrel Cactus",
     "scientific_name": "Echinocactus grusonii",
     "description": "A round cactus with golden-yellow spines, native to Mexico.",
-    "long_description": "The Golden Barrel Cactus is a popular desert plant known for its distinctive round shape and bright yellow spines. Native to the central highlands of Mexico, it thrives in arid environments and well-drained soil. The cactus can grow up to 1 meter in height and diameter, making it an eye-catching feature in desert landscapes. Its spines protect it from herbivores, while its ribbed surface allows it to expand and contract as it stores or uses water. In late spring, mature plants produce yellow flowers at the top of the stem, followed by small fruits. The Golden Barrel Cactus is highly drought-tolerant and requires full sunlight to thrive. It is often used in xeriscaping, a landscaping method that reduces the need for irrigation. Although slow-growing, it can live for several decades. The cactus is considered endangered in the wild due to habitat loss, but it is widely cultivated for ornamental purposes."
+    "long_description": "The Golden Barrel Cactus is a popular desert plant known for its distinctive round shape and bright yellow spines. Native to the central highlands of Mexico, it thrives in arid environments and well-drained soil. The cactus can grow up to 1 meter in height and diameter, making it an eye-catching feature in desert landscapes.",
+    "special_features": [
+      "Distinctive Round Shape",
+      "Golden Spine Display",
+      "Drought Resistance"
+    ],
+    "care_tips": {
+      "light": "Full to Partial Sun",
+      "water": "Every 2-3 weeks",
+      "temperature": "Minimum of 12°C (54°F)"
+    }
+  },
+  {
+    "name": "Desert Agave",
+    "scientific_name": "Agave deserti",
+    "description": "A rosette-forming succulent with thick, spiny leaves.",
+    "long_description": "The Desert Agave is a hardy succulent that forms a rosette of thick, blue-gray leaves with sharp spines along the margins. It produces a tall flowering stalk at the end of its life.",
+    "special_features": [
+      "Drought Tolerant",
+      "Century Plant Family",
+      "Spectacular Death Bloom"
+    ],
+    "care_tips": {
+      "light": "Full Sun",
+      "water": "Minimal when established",
+      "temperature": "Tolerates -7°C (20°F)"
+    }
+  },
+  {
+    "name": "Ocotillo",
+    "scientific_name": "Fouquieria splendens",
+    "description": "A unique desert plant with long, spiny canes and bright red flowers.",
+    "long_description": "The Ocotillo is a distinct desert plant with long, upright canes covered in small leaves after rain and bright red tubular flowers at the tips. It can grow up to 6 meters tall.",
+    "special_features": [
+      "Quick Leaf Response to Rain",
+      "Hummingbird Attraction",
+      "Living Fence Use"
+    ],
+    "care_tips": {
+      "light": "Full Sun",
+      "water": "Deep watering when dry",
+      "temperature": "Minimum of 10°C (50°F)"
+    }
   }
 ]
