@@ -1,0 +1,739 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ScrollView-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#60863e">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="20dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Carbon Footprint"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textColor="#557e32"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:background="@drawable/oval_background"/>-->
+
+<!--            &lt;!&ndash; Commute Section &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter the distance you drive per week (in km)"-->
+<!--                android:padding="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#dce6c2"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputCommute"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Enter numbers only"-->
+<!--                android:inputType="number"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Submit"-->
+<!--                android:id="@+id/submitCommute"/>-->
+
+<!--            &lt;!&ndash; Electricity Section &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter your monthly electricity bill (in RM)"-->
+<!--                android:padding="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#dce6c2"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputElectricity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Enter numbers only"-->
+<!--                android:inputType="number"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Submit"-->
+<!--                android:id="@+id/submitElectricity"/>-->
+
+<!--            &lt;!&ndash; Food Section &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter the number of meals you consume per day"-->
+<!--                android:padding="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#dce6c2"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputFood"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Enter numbers only"-->
+<!--                android:inputType="number"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Submit"-->
+<!--                android:id="@+id/submitFood"/>-->
+
+<!--            &lt;!&ndash; Waste Section &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter the number of waste you generate per week (in kg)"-->
+<!--                android:padding="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="#dce6c2"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/inputWaste"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Enter numbers only"-->
+<!--                android:inputType="number"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Submit"-->
+<!--                android:id="@+id/submitWaste"-->
+<!--                android:textColor="#dce6c2"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter For Result"-->
+<!--                android:id="@+id/btnCalculate"-->
+<!--                android:backgroundTint="#006400"-->
+<!--                android:textColor="#dce6c2"/>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--<ScrollView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#60863E">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="12dp">-->
+
+<!--        &lt;!&ndash; Title &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Carbon Footprint"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#557E32"-->
+<!--            android:fontFamily="sans-serif-medium"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:background="@drawable/oval_background"/>-->
+
+<!--        &lt;!&ndash; Commute Section &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardBackgroundColor="#D6EFC7"-->
+<!--            android:elevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="12dp">-->
+
+<!--                &lt;!&ndash; Header &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="COMMUTE"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                &lt;!&ndash; Subjudul &ndash;&gt;-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Enter the distance you drive per week (in km)"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+
+<!--                &lt;!&ndash; Input &ndash;&gt;-->
+<!--                <EditText-->
+<!--                    android:id="@+id/inputCommute"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Enter numbers only"-->
+<!--                    android:background="@drawable/edit_text_background"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:inputType="numberDecimal"/>-->
+
+<!--                &lt;!&ndash; Tombol &ndash;&gt;-->
+<!--                <Button-->
+<!--                    android:id="@+id/submitCommute"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Submit"-->
+<!--                    android:backgroundTint="#557E32"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash; Electricity Section &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardBackgroundColor="#FFFFFF"-->
+<!--            android:elevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ELECTRICITY"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Enter your monthly electricity bill (in RM)"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/inputElectricity"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Enter numbers only"-->
+<!--                    android:background="@drawable/edit_text_background"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:inputType="numberDecimal"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/submitElectricity"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Submit"-->
+<!--                    android:backgroundTint="#557E32"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash; Food Section &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardBackgroundColor="#FFFFFF"-->
+<!--            android:elevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="FOOD CONSUMPTION"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Enter the number of meals you consume per day"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/inputFood"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Enter numbers only"-->
+<!--                    android:background="@drawable/edit_text_background"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:inputType="number"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/submitFood"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Submit"-->
+<!--                    android:backgroundTint="#557E32"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash; Waste Section &ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardCornerRadius="12dp"-->
+<!--            app:cardBackgroundColor="#FFFFFF"-->
+<!--            android:elevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="WASTE"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Enter the number of waste you generate per week (in kg)"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textColor="#3A5A40"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/inputWaste"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Enter numbers only"-->
+<!--                    android:background="@drawable/edit_text_background"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:inputType="numberDecimal"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/submitWaste"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Submit"-->
+<!--                    android:backgroundTint="#557E32"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:layout_marginTop="8dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash; Final Button &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnCalculate"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Enter For Result"-->
+<!--            android:backgroundTint="#006400"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:padding="12dp"/>-->
+<!--    </LinearLayout>-->
+<!--</ScrollView>-->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60863E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Main Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carbon Footprint"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#557E32"
+            android:gravity="center"
+            android:background="@drawable/oval_background"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Commute Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Commute Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_car"
+                    android:contentDescription="Car Icon"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COMMUTE"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_car"
+                    android:contentDescription="Car Icon"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Commute Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#cddaac"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the furthest distance you drive per week (in KM)"
+                        android:textSize="16sp"
+                        android:textColor="#3A5A40"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <EditText
+                        android:id="@+id/inputCommute"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Enter numbers only"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Electricity Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Electricity Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_electricity"
+                    android:contentDescription="Electricity Icon"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ELECTRICITY USAGE"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_electricity"
+                    android:contentDescription="Electricity Icon"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Electricity Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#cddaac"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter your monthly electricity bill (in RM)"
+                        android:textSize="16sp"
+                        android:textColor="#3A5A40"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <EditText
+                        android:id="@+id/inputElectricity"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Enter numbers only"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Food Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Food Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_food"
+                    android:contentDescription="Food Icon"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOOD CONSUMPTION"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_food"
+                    android:contentDescription="Food Icon"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Food Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#cddaac"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the number of meals you consume the most per day"
+                        android:textSize="16sp"
+                        android:textColor="#3A5A40"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <EditText
+                        android:id="@+id/inputFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Enter numbers only"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Waste Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Waste Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_waste"
+                    android:contentDescription="Waste Icon"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WASTE"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_waste"
+                    android:contentDescription="Waste Icon"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Waste Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#cddaac"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the number of waste you generate the most per week (in kg)"
+                        android:textSize="16sp"
+                        android:textColor="#3A5A40"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <EditText
+                        android:id="@+id/inputWaste"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Enter numbers only"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Enter For Result Button -->
+        <Button
+            android:id="@+id/btnEnterForResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter For Result"
+            android:backgroundTint="#cddaac"
+            android:textColor="#60863e"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>
+
+
