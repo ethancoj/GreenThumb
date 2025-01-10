@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSecondary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                style="?attr/materialCardViewFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="26dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/profile_picture_foreground"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="-6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/TVUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="John Doe"
+                            android:textAppearance="?attr/textAppearanceBodyLarge"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:id="@+id/TVEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Default Email"
+                            android:textAppearance="?attr/textAppearanceBodyMedium"
+                            android:layout_marginStart="8dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/BtnEditAccount"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Edit Profile"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnLogOut"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log Out"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="?attr/materialCardViewFilledStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnGrowthTracker"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:drawableTop="@mipmap/growth_tracker_icon_foreground"
+                        android:drawableTint="?attr/colorPrimary"
+                        android:text="Growth Tracker" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="?attr/materialCardViewFilledStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnPlantInformation"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:drawableTop="@mipmap/plant_info_icon_foreground"
+                        android:drawableTint="?attr/colorPrimary"
+                        android:text="Plant Information" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="?attr/materialCardViewFilledStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnSustainableLivingGuide"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:drawableTop="@mipmap/sustainable_living_guide_icon_foreground"
+                        android:drawableTint="?attr/colorPrimary"
+                        android:text="Sustainable Living Guide" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="?attr/materialCardViewFilledStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnCarbonFootprintCalcu"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:drawableTop="@mipmap/carbon_footprint_calculator_icon_foreground"
+                        android:drawableTint="?attr/colorPrimary"
+                        android:text="Carbon Footprint Calculator" />
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                style="?attr/materialCardViewFilledStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnNotification"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notifications" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnHelpCentre"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Help Centre" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnFeedback"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Feedback" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/BtnAboutUs"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Us" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

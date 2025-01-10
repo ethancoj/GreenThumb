@@ -17,8 +17,13 @@
         android:title="@string/informations" />
 
     <item
-        android:id="@+id/mActivityMainProfile"
-        android:icon="@drawable/ic_person_24dp"
-        android:title="@string/profile" />
+        android:id="@+id/mActivityMainCalculator"
+        android:icon="@drawable/ic_calculate_24dp"
+        android:title="@string/calculator"/>
+
+    <item
+        android:id="@+id/mActivityMainGuide"
+        android:icon="@drawable/ic_living_guide_24dp"
+        android:title="@string/guide" />
 
 </menu>

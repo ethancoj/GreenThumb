@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.plants" />
-                  <option name="mobileSdkAppId" value="1:873157098755:android:1e0d7912f1cffe71abfd36" />
-                  <option name="projectId" value="students-9296f" />
-                  <option name="projectNumber" value="873157098755" />
+                  <option name="mobileSdkAppId" value="1:724114205951:android:7de1c67db117ac70c5b0ca" />
+                  <option name="projectId" value="greenthumb-e9870" />
+                  <option name="projectNumber" value="724114205951" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

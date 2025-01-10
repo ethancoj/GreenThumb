@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "873157098755",
-    "project_id": "students-9296f",
-    "storage_bucket": "students-9296f.firebasestorage.app"
+    "project_number": "724114205951",
+    "project_id": "greenthumb-e9870",
+    "storage_bucket": "greenthumb-e9870.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:873157098755:android:1e0d7912f1cffe71abfd36",
+        "mobilesdk_app_id": "1:724114205951:android:7de1c67db117ac70c5b0ca",
         "android_client_info": {
           "package_name": "com.plants"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDqT_I3TfhiDDZI1cUMezCF-QMUE2DfRFk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:873157098755:android:a86059cabec648ddabfd36",
-        "android_client_info": {
-          "package_name": "com.students"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDqT_I3TfhiDDZI1cUMezCF-QMUE2DfRFk"
+          "current_key": "AIzaSyDyOm9vQz2RQUH35tSR2u1RFZaeUFdaWdA"
         }
       ],
       "services": {

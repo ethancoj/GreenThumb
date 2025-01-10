@@ -2,7 +2,7 @@
     <string name="_height">Height: %1$d cm</string>
     <string name="_leaf_count">Leaf count: %1$d</string>
     <string name="add_plant">Add plant</string>
-    <string name="app_name">Plants</string>
+    <string name="app_name">GreenThumb</string>
     <string name="desert">Desert</string>
     <string name="home">Home</string>
     <string name="informations">Informations</string>
@@ -15,4 +15,9 @@
     <string name="wetland">Wetland</string>
     <string name="growth">Growth Tracker</string>
     <string name="no_growth_records_found">No growth records found</string>
+    <string name="calculator">Carbon Footprint Calculator</string>
+    <string name="guide">Sustainable Living Guide</string>
+    <string name="article_image">Article Image</string>
+    <string name="loading_news">Loading News...</string>
+    <string name="error_loading_news">Error loading news</string>
 </resources>
