@@ -71,7 +71,6 @@ public class DashboardFragment extends Fragment {
             requireActivity().finish();
         });
 
-        // Other buttons remain the same
         view.findViewById(R.id.BtnEditAccount).setOnClickListener(v -> {
             // Placeholder for future implementation
         });

@@ -5,6 +5,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mtFragmentCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/calculator"
+        app:titleCentered="true" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -16,20 +26,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="12dp">
-
-            <!-- Main Title -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Carbon Footprint"
-                android:textSize="24sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#557E32"
-                android:gravity="center"
-                android:background="@drawable/oval_background"
-                android:padding="12dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"/>
 
             <!-- Commute Section -->
             <LinearLayout

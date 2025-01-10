@@ -10,9 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class CalculateFragment extends Fragment {
     private EditText inputCommute, inputElectricity, inputFood, inputWaste;
+    private MaterialToolbar toolbar;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -24,6 +26,9 @@ public class CalculateFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // Initialize toolbar
+        toolbar = view.findViewById(R.id.mtFragmentCalculate);
 
         // Bind input views
         inputCommute = view.findViewById(R.id.inputCommute);
@@ -37,10 +42,10 @@ public class CalculateFragment extends Fragment {
 
     private void calculateCarbonFootprint() {
         try {
-            double commute = parseInput(inputCommute); // km per week
-            double electricity = parseInput(inputElectricity); // RM per month
-            double food = parseInput(inputFood); // meals per day
-            double waste = parseInput(inputWaste); // kg per week
+            double commute = parseInput(inputCommute);
+            double electricity = parseInput(inputElectricity);
+            double food = parseInput(inputFood);
+            double waste = parseInput(inputWaste);
 
             // Calculate monthly carbon footprints
             double commuteCarbon = (commute * 4) * 0.12; // 4 weeks in a month, 0.12 kg CO2 per km
