@@ -26,6 +26,17 @@ public class GrowthHistoryAdapter extends RecyclerView.Adapter<GrowthHistoryAdap
         holder.date.setText(dateFormat.format(growth.getTimestamp().toDate()));
         holder.height.setText(String.format("%d cm", (int)growth.getHeight()));
         holder.leafCount.setText(String.valueOf(growth.getLeafCount()));
+
+        // Show growth rates if available
+        if (growth.getGrowthRate() != 0.0) {
+            holder.growthRate.setVisibility(View.VISIBLE);
+            holder.growthRate.setText(String.format(Locale.getDefault(),
+                    "Growth: %.1f cm/day • %.1f leaves/day",
+                    growth.getGrowthRate(),
+                    growth.getLeafGrowthRate()));
+        } else {
+            holder.growthRate.setVisibility(View.GONE);
+        }
     }
 
     @NonNull
@@ -46,12 +57,14 @@ public class GrowthHistoryAdapter extends RecyclerView.Adapter<GrowthHistoryAdap
         final TextView date;
         final TextView height;
         final TextView leafCount;
+        final TextView growthRate;
 
         ViewHolder(View view) {
             super(view);
             date = view.findViewById(R.id.tvDate);
             height = view.findViewById(R.id.tvHistoryHeight);
             leafCount = view.findViewById(R.id.tvHistoryLeafCount);
+            growthRate = view.findViewById(R.id.tvGrowthRate);
         }
     }
 }

@@ -175,13 +175,6 @@
                         android:text="Notifications" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/BtnHelpCentre"
-                        style="@style/Widget.Material3.Button.TextButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Help Centre" />
-
-                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/BtnFeedback"
                         style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="match_parent"

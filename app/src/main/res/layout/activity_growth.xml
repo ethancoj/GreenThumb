@@ -1,225 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="?attr/colorSecondary">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/mtActivityGrowth"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorSurface"
-        app:navigationIcon="@drawable/ic_close_24dp"
-        app:title="Growth Details"
-        app:titleCentered="true"
-        app:menu="@menu/menu_activity_growth" />
-
-    <!-- View Mode Layout -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/layoutViewMode"
-        style="?attr/materialCardViewFilledStyle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/mtActivityGrowth"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurface"
+            app:navigationIcon="@drawable/ic_close_24dp"
+            app:title="Growth Details"
+            app:titleCentered="true"
+            app:menu="@menu/menu_activity_growth" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:indeterminate="true"
+            android:visibility="gone"/>
 
-            <ImageView
-                android:id="@+id/ivGrowthImage"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/ic_image_24dp"
-                android:contentDescription="Plant Image"
-                android:scaleType="centerCrop" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Plant Name"
-                    android:textStyle="bold"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
-
-                <TextView
-                    android:id="@+id/tvGrowthName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?attr/textAppearanceBodyLarge"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Height (cm)"
-                    android:textStyle="bold"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
-
-                <TextView
-                    android:id="@+id/tvGrowthHeight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?attr/textAppearanceBodyLarge"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
-            </LinearLayout>
+        <!-- View Mode Layout -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/layoutViewMode"
+            style="?attr/materialCardViewFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Leaf Count"
-                    android:textStyle="bold"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"/>
+                <ImageView
+                    android:id="@+id/ivGrowthImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/ic_image_24dp"
+                    android:contentDescription="Plant Image"
+                    android:scaleType="centerCrop" />
 
-                <TextView
-                    android:id="@+id/tvGrowthLeafCount"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:textAppearance="?attr/textAppearanceBodyLarge"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="16dp"/>
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plant Name"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvGrowthName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="?attr/textAppearanceBodyLarge"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height (cm)"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvGrowthHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="?attr/textAppearanceBodyLarge"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leaf Count"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvGrowthLeafCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="?attr/textAppearanceBodyLarge"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-    </com.google.android.material.card.MaterialCardView>
+        </com.google.android.material.card.MaterialCardView>
 
-    <!-- Growth History Section -->
-    <TextView
-        android:id="@+id/tvHistoryTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="Growth History"
-        android:textStyle="bold"
-        android:textColor="@android:color/white" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvGrowthHistory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="8dp"
-        android:nestedScrollingEnabled="false"
-        android:clipToPadding="false" />
-
-    <!-- Edit Mode Layout -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/layoutEditMode"
-        style="?attr/materialCardViewFilledStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:visibility="gone">
-
-        <LinearLayout
+        <!-- Growth Trends Container -->
+        <FrameLayout
+            android:id="@+id/trendContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:visibility="gone"/>
 
-            <ImageView
-                android:id="@+id/ivGrowthImageEdit"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
-                android:scaleType="centerCrop"
-                android:background="@drawable/ic_image_24dp"
-                android:contentDescription="Plant Image" />
+        <!-- Growth History Section -->
+        <TextView
+            android:id="@+id/tvHistoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Growth History"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSelectImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="16dp"
-                android:text="Select Image" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGrowthHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false" />
 
-            <com.google.android.material.textfield.TextInputLayout
+        <!-- Edit Mode Layout -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/layoutEditMode"
+            style="?attr/materialCardViewFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="Plant Name">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etGrowthName"
+                <ImageView
+                    android:id="@+id/ivGrowthImageEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_image_24dp"
+                    android:contentDescription="Plant Image" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSelectImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Select Image" />
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text" />
+                    android:layout_marginBottom="16dp"
+                    android:hint="Plant Name">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGrowthName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="Height (cm)">
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etGrowthHeight"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal" />
+                    android:layout_marginBottom="16dp"
+                    android:hint="Height (cm)">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGrowthHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:hint="Leaf Count">
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etGrowthLeafCount"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:layout_marginBottom="16dp"
+                    android:hint="Leaf Count">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGrowthLeafCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSaveGrowth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Save" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-        </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveGrowth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
 
-    </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
-</LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

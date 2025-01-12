@@ -13,6 +13,8 @@ public class Growth {
     private int leafCount;
     private String imagePath;
     private Timestamp timestamp;
+    private double growthRate; // cm per day
+    private double leafGrowthRate; // leaves per day
 
     public Growth() {
         // Required empty constructor for Firestore
@@ -75,5 +77,34 @@ public class Growth {
 
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public double getGrowthRate() {
+        return growthRate;
+    }
+
+    public void setGrowthRate(double growthRate) {
+        this.growthRate = growthRate;
+    }
+
+    public double getLeafGrowthRate() {
+        return leafGrowthRate;
+    }
+
+    public void setLeafGrowthRate(double leafGrowthRate) {
+        this.leafGrowthRate = leafGrowthRate;
+    }
+
+    // Calculate growth rates based on previous record
+    public void calculateGrowthRates(Growth previousGrowth) {
+        if (previousGrowth != null && this.timestamp != null && previousGrowth.timestamp != null) {
+            long timeDifferenceMillis = this.timestamp.toDate().getTime() - previousGrowth.timestamp.toDate().getTime();
+            double daysDifference = timeDifferenceMillis / (1000.0 * 60 * 60 * 24); // Convert to days
+
+            if (daysDifference > 0) {
+                this.growthRate = (this.height - previousGrowth.height) / daysDifference;
+                this.leafGrowthRate = (this.leafCount - previousGrowth.leafCount) / daysDifference;
+            }
+        }
     }
 }
