@@ -80,18 +80,20 @@ public class DashboardFragment extends Fragment {
 
         view.findViewById(R.id.BtnNotification).setOnClickListener(v -> {
             // Placeholder for future implementation
-        });
-
-        view.findViewById(R.id.BtnHelpCentre).setOnClickListener(v -> {
-            // Placeholder for future implementation
+            Intent intent = new Intent(getContext(), NotificationActivity.class);
+            startActivity(intent);
         });
 
         view.findViewById(R.id.BtnFeedback).setOnClickListener(v -> {
             // Placeholder for future implementation
+            Intent intent = new Intent(getContext(), FeedbackActivity.class);
+            startActivity(intent);
         });
 
         view.findViewById(R.id.BtnAboutUs).setOnClickListener(v -> {
             // Placeholder for future implementation
+            Intent intent = new Intent(getContext(), AboutUsActivity.class);
+            startActivity(intent);
         });
     }
 
