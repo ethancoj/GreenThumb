@@ -22,25 +22,28 @@ public class DashboardFragment extends Fragment {
         return rootView;
     }
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
         // Retrieve email from arguments
         TextView emailTextView = view.findViewById(R.id.TVEmail);
         TextView usernameTextView = view.findViewById(R.id.TVUsername);
 
+        String userEmail = null;
+        if (getActivity() != null) {
+            userEmail = ((MainActivity) getActivity()).getUserEmail();
+        }
 
-        if (getArguments() != null) {
-            String userEmail = getArguments().getString("USER_EMAIL");
+        if (userEmail != null && !userEmail.isEmpty()) {
+            emailTextView.setText(userEmail);
+            String username = extractUsername(userEmail);
+            usernameTextView.setText(username);
+        } else if (getArguments() != null) {
+            userEmail = getArguments().getString("USER_EMAIL");
             if (userEmail != null) {
-                emailTextView.setText(userEmail); // Set email to TextView
-
-                // Extract the username from the email (before the "@")
+                emailTextView.setText(userEmail);
                 String username = extractUsername(userEmail);
-                // Set the username to the username TextView
                 usernameTextView.setText(username);
             }
         }

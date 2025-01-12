@@ -10,6 +10,10 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private String userEmail; // Variable to store the email
 
+    public String getUserEmail() {
+        return userEmail;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
