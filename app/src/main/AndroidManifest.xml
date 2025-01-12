@@ -49,6 +49,18 @@
             android:name=".NewsFullActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
